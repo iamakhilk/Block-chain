@@ -1,0 +1,82 @@
+the first block is called genesis block which doesnt have prev hash , obviously
+
+each block has a prev. hash of its prev. block which made these blocks to connect with each other cryptographically
+
+hash  ------------- generated using SHA256 algorithm made by NSA and is 64 characters   , characters include : [0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F]
+
+same data always have same hash
+
+if add one character (means tiny bit) more to our data then its hash changes completely ---- its called avalanche effect
+
+
+hash algorithms requirements : -------------------  1. One way   : means u cant generate data back from its hash value , no reverse engennering
+													2. deterministic : means same document when taken again for its hash value calculation should generate same hash value		
+													3. fast computation
+													4. avalanche effect
+													5. must withstand collision
+													
+immutable ledger   -------------------------------It all resides in the concept of the hash. If hacker tries to alter anything in the block its hash will change. Now the hash will no long match the previous hash in the second block. So, the hacker would have to change the next block, and the block after that, etc.
+
+
+
+distributed p2p network --------------------------- blockchain is distributed to many systems (say 10000 computers sharing same blockchain) , so if someone hacks a block chain of one system then the other 9999 computer send signal to that comp. ki hey ur block chain is different from the majority 
+													of us....so for a hacker to hack first he need to change all the hash values of one block chain to make them connected ( immutable ledger ) along with more then 50% of the computer's sharing that block chain in couple of minutes 
+													which is impossible
+
+
+
+
+the hash is accepted when its below the target and then only block is made linked in to the chain   ----- miners do hit and trial to find the value of "nonce" such that the hash value comes below the target
+
+
+
+censensus protocol   ---------------------------- 1. to prevent hackers for addind malicious block at the end
+												  2. to prevent collision of two different blocks adding at the same in in the same chain from two different systems.....
+
+												   ### protocol used here is "proof-of-work"  ,, used in bitcoins
+																	1. adding new block will get checked by the all distributed systems they follow their checking criteria once it found clean then it get added
+																	2. the block which get spread more is get accepted in the chain and the block which didnt get accepted is called orphaned block
+																	
+																	
+Bitcoin Mining is intentionally designed to be resource-intensive and difficult so that the number of blocks found each day by miners remains steady over time, producing a controlled finite monetary supply. Individual blocks must contain a proof-of-work to be considered valid.
+This proof-of-work (PoW) is verified by other Bitcoin nodes each time they receive a block. Bitcoin uses a PoW function to protect against double-spending, which also makes Bitcoin's ledger immutable.																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
